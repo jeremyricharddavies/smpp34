@@ -179,7 +179,7 @@ func (t *Transceiver) Read() (Pdu, error) {
 	}
 
 	switch pdu.GetHeader().Id {
-	case SUBMIT_SM_RESP, DELIVER_SM:
+	case UNBIND_RESP, SUBMIT_SM_RESP, DELIVER_SM:
 		return pdu, nil
 	case ENQUIRE_LINK:
 		p, _ := t.Smpp.EnquireLinkResp(pdu.GetHeader().Sequence)
