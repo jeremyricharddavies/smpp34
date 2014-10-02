@@ -1,7 +1,7 @@
 package smpp34
 
 const (
-	TLVFieldLenErr TLVFieldErr = "Invalid TLV value lenght"
+	TLVFieldLenErr TLVFieldErr = "Invalid TLV value length"
 	TLVFieldPduErr TLVFieldErr = "PDU Type does not support TLV"
 )
 
